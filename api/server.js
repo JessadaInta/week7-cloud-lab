@@ -102,6 +102,8 @@ app.use((req, res) => {
     });
 });
 
+console.log("taskRoutes type:", typeof taskRoutes);
+console.log("errorHandler type:", typeof errorHandler);
 // Error handler
 app.use(errorHandler);
 
