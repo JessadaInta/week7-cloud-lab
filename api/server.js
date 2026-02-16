@@ -86,7 +86,7 @@ app.get('/api/health', async (req, res) => {
 });
 
 // API routes
-app.use('/api/tasks', taskRoutes);
+app.use('/api', taskRoutes);
 
 // Root route
 app.get('/', (req, res) => {
