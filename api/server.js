@@ -9,7 +9,7 @@ require('dotenv').config();
 
 // Import modules
 const taskRoutes = require('./src/routes/taskRoutes');
-const errorHandler = require('./src/middleware/errorHandler');
+const { errorHandler } = require('./src/middleware/errorHandler');
 const { healthCheck, closePool } = require('./src/config/database');
 
 // Create Express app
